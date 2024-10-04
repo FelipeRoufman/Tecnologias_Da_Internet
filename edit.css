@@ -1,0 +1,43 @@
+.container {
+    background: #ffffff;
+    width: 1080px;
+    height: 2041px;
+    top: -1147px;
+    left: -21px;
+    gap: 0px;
+    border-radius: 30px 30px 10px 10px;
+    opacity: 0px;
+
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(111, 136, 204, 0.671);
+    
+}
+
+.imagem{
+    width: 1105px;
+    height: 700px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.texto{
+
+    width: 707px;
+    height: 106px;
+    top: 785px;
+    left: 187px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Red Hat Display;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 105.84px;
+    text-align: left;
+
+
+}
