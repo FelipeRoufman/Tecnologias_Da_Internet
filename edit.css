@@ -1,43 +1,139 @@
-.container {
-    background: #ffffff;
-    width: 1080px;
-    height: 2041px;
-    top: -1147px;
-    left: -21px;
-    gap: 0px;
-    border-radius: 30px 30px 10px 10px;
-    opacity: 0px;
-
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+    background: linear-gradient( #01266a, #66a7df);
 }
 
-.fundo{
+.fundo {
     display: flex;
     justify-content: center;
-    background-color: rgba(111, 136, 204, 0.671);
-    
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.imagem{
-    width: 1105px;
-    height: 700px;
-    gap: 0px;
-    opacity: 0px;
-
+.container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 400px; 
+    border-radius: 30px 30px 10px 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
 }
 
-.texto{
+.imagem img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 
-    width: 707px;
-    height: 106px;
-    top: 785px;
-    left: 187px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Red Hat Display;
-    font-size: 80px;
+.texto h1 {
+    color: #122331;
+    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 105.84px;
+    margin: 20px 0;
+}
+
+.resumoDoPedido {
+    font-size: 1rem;
+    color: #255e78;
+    margin: 10px 20px;
+    padding: 0 20px;
+}
+
+.linhaDeTresColunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.plano {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #0e5f9e;
+    font-size: 1.1rem;
+}
+
+.plano i {
+    font-size: 2rem;
+    color: #0e5f9e;
+}
+
+.plano-info {
     text-align: left;
+    justify-content: center;
+    display: grid;
 
+}
 
+.planoAtual {
+    font-weight: bold;
+    color: #122331;
+}
+
+.preco {
+    color: #122331;
+    margin-top: 3px; 
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-alterar {
+    font-size: 1rem;
+    color: #255e78;
+    background-color: none;
+    font-weight: bolder;
+}
+
+.btn-alterar:hover {
+    background-color: #122331;
+    color: #ffffff;
+}
+
+.continuar {
+    background-color: #0e5f9e;
+    color: #ffffff;
+    width: 100%;
+}
+
+.continuar:hover {
+    background-color: #255e78;
+}
+
+.cancelar {
+    background-color: #ffffff;
+    color: #0e5f9e;
+    width: 100%;
+    font-weight: bolder;
+}
+
+.cancelar:hover {
+    background-color: #f2f5fc;
+}
+
+@media (max-width: 768px) {
+    .texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .resumoDoPedido {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
 }
